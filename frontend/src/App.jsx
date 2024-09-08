@@ -11,8 +11,6 @@ function App() {
 
   const renderData = async () => {
     try {
-      let res = await authService.getHii();
-      console.log(res);
     } catch (error) {
       console.log(error);
     }
