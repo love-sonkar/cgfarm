@@ -6,7 +6,7 @@ import OutletWrapper from "./component/outletWrapper";
 import "./index.css";
 import ErrorPage from "./component/ErrorPage/ErrorPage.jsx";
 import { FullScreenSpinner } from "./component/Spinner/Spinner.jsx";
-import AdminPage from "./component/AdminForm/AdminPage.jsx";
+import AdminPage from "./component/AdminPage/AdminPage.jsx";
 
 const route = createBrowserRouter([
   {
