@@ -5,22 +5,15 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Users {
+public class Images {
 
     @Id
     @Column
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
 
-    private String name;
-
-    private String email;
-
-    private String contact;
-
-    private String password;
-
-    private String permission = "user";
+    @Column(columnDefinition = "clob")
+    private String images;
 
     private long createTimeStamp;
 

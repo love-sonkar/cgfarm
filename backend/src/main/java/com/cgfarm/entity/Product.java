@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Users {
+public class Product {
 
     @Id
     @Column
@@ -14,13 +14,19 @@ public class Users {
 
     private String name;
 
-    private String email;
+    private String weight;
 
-    private String contact;
+    @Column(columnDefinition = "clob")
+    private String image;
 
-    private String password;
+    @Column(columnDefinition = "nvarchar")
+    private String details;
 
-    private String permission = "user";
+    private long price;
+
+    private long previousPrice;
+
+    private long categoryId = 0;
 
     private long createTimeStamp;
 
